@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<title>Order Portal</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="navbar">
+🛒 Real-Time Order Tracking System
+</div>
+
+<div class="container">
+
+<div class="order-form">
+
+<h2>Place Order</h2>
+
+<input id="customer" placeholder="Customer Name">
+<input id="product" placeholder="Product">
+
+<button onclick="placeOrder()">Place Order</button>
+
+</div>
+
+<div id="orders"></div>
+
+</div>
+
+<script src="/socket.io/socket.io.js"></script>
+<script src="script.js"></script>
+
+</body>
+</html>
